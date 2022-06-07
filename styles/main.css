@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main_container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cells_container {
+  max-width: min(100%, 1200px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.cell__item {
+  width: 16px;
+  height: 16px;
+
+  margin: 2px;
+
+  background-color: var(--color-cards);
+
+  transition: 3s ease;
+}
+
+.cell__item:hover {
+  transition-duration: 0s;
+}
